@@ -1,0 +1,26 @@
+{
+  "name": "with-ant-design",
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "next",
+    "build": "next build",
+    "start": "next start",
+    "precommit": "pretty-quick --staged",
+    "prettier:all": "prettier --write ./**/{*.ts,*.tsx,*.js,*.jsx,*.json,*.scss,*.css,*.md}"
+  },
+  "dependencies": {
+    "@zeit/next-css": "1.0.1",
+    "antd": "3.9.3",
+    "babel-plugin-import": "1.9.1",
+    "next": "7.0.0",
+    "react": "16.5.2",
+    "react-dom": "16.5.2"
+  },
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/plugin-proposal-decorators": "7.1.0",
+    "husky": "1.0.0-rc.15",
+    "prettier": "1.14.3",
+    "pretty-quick": "1.7.0"
+  }
+}
