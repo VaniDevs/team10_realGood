@@ -1,0 +1,8 @@
+.footer {
+  transition: opacity 0.5s;
+  background: #fff;
+  margin-top: 24px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
