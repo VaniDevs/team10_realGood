@@ -48,7 +48,10 @@ export default class CreateResourceContainer extends Component {
       description: this.state.form.description.value,
       type: this.state.form.type.value,
       location: this.state.form.location.value,
-      date: this.state.form.date.value[0]
+      date: {
+        start: this.state.form.date.value[0],
+        end: this.state.form.date.value[1]
+      }
     });
     this.setState({
       ...this.state,
