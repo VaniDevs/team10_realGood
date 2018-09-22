@@ -1,0 +1,13 @@
+FROM node:10.11.0-alpine
+
+MAINTAINER JUNYUAN ZHGENG
+
+ENV NPM_CONFIG_LOGLEVEL warn
+
+# Provides cached layer for node_modules
+RUN mkdir -p /app
+
+# Define working directory
+WORKDIR /app
+
+EXPOSE 3000
