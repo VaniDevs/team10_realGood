@@ -14,7 +14,8 @@
     "babel-plugin-import": "1.9.1",
     "next": "7.0.0",
     "react": "16.5.2",
-    "react-dom": "16.5.2"
+    "react-dom": "16.5.2",
+    "axios": "0.18.0"
   },
   "license": "ISC",
   "devDependencies": {
