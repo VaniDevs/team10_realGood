@@ -9,12 +9,11 @@ const string2date = input => {
 };
 
 const images = [
-  "https://www.logolynx.com/images/logolynx/6c/6ce8bf3f5c5b7fbbb67b51227fd3cc54.jpeg",
-  "https://www.logolynx.com/images/logolynx/d4/d4e05edd2d225022bfd1f3331b532e53.png",
-  "https://www.logolynx.com/images/logolynx/fa/fa924fb79d10bb32cb5d2c0db50e993c.jpeg",
-  "https://www.ethiopianairlines.com/Cms_Data/Contents/EthiopianAirlines/Media/FlyEthiopian/MedicalImage/Hallelujah-General-Hospital-Logo.png",
-  "https://image.freepik.com/free-vector/hospital-logo-in-green-and-blue_1043-66.jpg",
-  "https://vignette.wikia.nocookie.net/clubpenguinfanon/images/3/34/001_hospital_logo.png/revision/latest?cb=20090908121630"
+  "https://cdn.freebiesupply.com/logos/large/2x/ubc-logo-png-transparent.png",
+  "https://salvationarmy.ca/wp-content/uploads/2017/10/cropped-site-icon-512.png",
+  "https://yt3.ggpht.com/a-/AN66SAyUQZoyeyIwRjioT5JQDZIghHUnNwkCT9FZ3w=s900-mo-c-c0xffffffff-rj-k-no",
+  "http://fraservalleynewsnetwork.com/wp-content/uploads/2015/05/BC-Childrens-Hospital-logo-1.jpeg",
+  "https://s3-media3.fl.yelpcdn.com/bphoto/38AD4nuLdivhFXirrSRwUQ/o.jpg"
 ];
 
 export default class CreateResourceContainer extends Component {
