@@ -1,7 +1,6 @@
 pipeline {
   agent any
   environment {
-    PATH = "$PATH:/usr/local/bin"
     DOCKER_HOST = "127.0.0.1"
   }
   stages {
