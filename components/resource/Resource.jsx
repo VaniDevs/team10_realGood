@@ -95,7 +95,9 @@ export default class CreateResourceContainer extends Component {
       >
         <List.Item.Meta
           avatar={<Avatar icon="user" />}
-          title={this.props.name}
+          title={
+            <a href={`/resource?id=${this.props.id}`}>{this.props.name}</a>
+          }
           description={`Location: ${this.props.location}`}
         />
         <p>

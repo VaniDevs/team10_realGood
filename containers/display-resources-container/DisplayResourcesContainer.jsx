@@ -14,7 +14,6 @@ export default class CreateResourceContainer extends Component {
 
   async componentDidMount() {
     const response = await axios.get(`${res.api}/all`);
-    console.log(response);
     this.setState({
       ...this.state,
       resources: response.data
