@@ -47,14 +47,14 @@ export default class CreateResourceContainer extends Component {
               <br />
               <p>{this.state.description}</p>
             </div>
-            <img
+            {/* <img
               alt="logo"
               src="https://gw.alipayobjects.com/zos/rmsportal/mqaQswcyDLcXyDKnZfES.png"
               style={{
                 maxWidth: "100%",
                 maxHeight: "100%"
               }}
-            />
+            /> */}
           </div>
         )}
       </Fragment>
