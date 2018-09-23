@@ -6,9 +6,9 @@ pipeline {
   stages {
     stage('Production Environment Deploy') {
       steps {
-        sh 'sudo docker-compose -f docker-compose-production.yml build'
-        sh 'sudo docker-compose -f docker-compose-production.yml down'
-        sh 'sudo docker-compose -f docker-compose-production.yml up -d'
+        sh 'docker-compose -f docker-compose-production.yml build'
+        sh 'docker-compose -f docker-compose-production.yml down'
+        sh 'docker-compose -f docker-compose-production.yml up -d'
       }
     }
   }
