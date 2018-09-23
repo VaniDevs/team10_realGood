@@ -1,11 +1,11 @@
 pipeline {
   agent any
   stages {
-    stage('Staging Environment Deploy') {
+    stage('Production Environment Deploy') {
       steps {
-        sh 'docker-compose -f docker-compose-staging.yml build'
-        sh 'docker-compose -f docker-compose-staging.yml down'
-        sh 'docker-compose -f docker-compose-staging.yml up -d'
+        sh 'docker-compose -f docker-compose-production.yml build'
+        sh 'docker-compose -f docker-compose-production.yml down'
+        sh 'docker-compose -f docker-compose-production.yml up -d'
       }
     }
   }
