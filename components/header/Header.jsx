@@ -23,7 +23,7 @@ export default class Header extends Component {
       <Layout.Header className="header">
         <div>
           <img alt="logo" src="/static/img/logo.jpg" />
-          <span className="text">weekendfuelbag</span>
+          {/* <span className="text">weekend fuelbag</span> */}
         </div>
         <div>
           {this.state.auth === "true" && <Avatar />}

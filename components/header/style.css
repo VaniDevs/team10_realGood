@@ -11,12 +11,13 @@
 }
 
 .header img {
-  height: 31px;
-  line-height: 31px;
-  margin-right: 8px;
+  height: 60px;
+  /* line-height: 31px; */
+  /* margin-right: 8px; */
 }
 
-.header text {
-  font-size: 16px;
+.text {
+  font-size: 20px;
   font-family: Raleway, Hiragino Sans GB, sans-seri;
+  font-weight: bold;
 }
