@@ -31,9 +31,10 @@ export default class CreateResourceContainer extends Component {
         )}
         {this.state.resources !== null && (
           <List
-            itemLayout="horizontal"
+            itemLayout="vertical"
+            size="large"
             dataSource={this.state.resources}
-            renderItem={resource => <Resource {...resource} />}
+            renderItem={(resource, key) => <Resource key={key} {...resource} />}
           />
         )}
       </Fragment>

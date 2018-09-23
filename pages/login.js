@@ -1,7 +1,6 @@
-import { Layout, Input, Button } from "antd";
+import { Layout } from "antd";
+import { Header, Footer, LoginForm } from "../components";
 import React, { Component } from "react";
-import { Header, Footer } from "../components";
-import res from "../res";
 
 export default class Logout extends Component {
   render() {
@@ -14,19 +13,20 @@ export default class Logout extends Component {
         <Header />
         <Layout.Content
           style={{
-            padding: "0 5vw"
+            padding: "0 15vw"
           }}
         >
-          <Input placeholder="User Name" />
-          <Input placeholder="Password" />
-          <Button
-            onClick={() => {
-              localStorage.setItem(res.auth, "true");
-              window.location = "/";
+          <div
+            style={{
+              background: "#fff",
+              padding: "10vh 5vw",
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "center"
             }}
           >
-            Log In
-          </Button>
+            <LoginForm />
+          </div>
         </Layout.Content>
         <Footer />
       </Layout>

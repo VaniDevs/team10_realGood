@@ -7,6 +7,7 @@
   display: flex;
   flex-direction: row;
   align-items: center;
+  justify-content: space-between;
 }
 
 .header img {
@@ -15,7 +16,7 @@
   margin-right: 8px;
 }
 
-.header span {
+.header text {
   font-size: 16px;
   font-family: Raleway, Hiragino Sans GB, sans-seri;
 }

@@ -1,7 +1,7 @@
-import { Layout } from "antd";
 import React, { Component } from "react";
-import { Header, Footer } from "../components";
 import { CreateResourceContainer } from "../containers";
+import { Layout } from "antd";
+import { Footer, Header } from "../components";
 
 export default class Index extends Component {
   render() {
@@ -14,10 +14,17 @@ export default class Index extends Component {
         <Header />
         <Layout.Content
           style={{
-            padding: "0 5vw"
+            padding: "0 15vw"
           }}
         >
-          <CreateResourceContainer />
+          <div
+            style={{
+              background: "#fff",
+              padding: "10vh 5vw"
+            }}
+          >
+            <CreateResourceContainer />
+          </div>
         </Layout.Content>
         <Footer />
       </Layout>

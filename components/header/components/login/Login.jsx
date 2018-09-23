@@ -1,4 +1,4 @@
-import { Button } from "antd";
+import { Button, Icon } from "antd";
 import React, { Component } from "react";
 
 export default class Login extends Component {
@@ -8,8 +8,9 @@ export default class Login extends Component {
         onClick={() => {
           window.location = "/login";
         }}
+        icon="login"
       >
-        Log In
+        Login
       </Button>
     );
   }

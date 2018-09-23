@@ -1,8 +1,13 @@
-import { Layout } from "antd";
+import { Layout, Modal, Button } from "antd";
 import React, { Component } from "react";
 import { Header, Footer } from "../components";
+import res from "../res";
 
 export default class Logout extends Component {
+  componentDidMount() {
+    localStorage.setItem(res.auth, "false");
+  }
+
   render() {
     return (
       <Layout
@@ -10,13 +15,27 @@ export default class Logout extends Component {
           minHeight: "100vh"
         }}
       >
-        <Header />
         <Layout.Content
           style={{
-            padding: "0 5vw"
+            padding: "0 15vw"
           }}
         >
-          You have logged out successfully!
+          <Modal
+            title="Log Out"
+            visible={true}
+            footer={
+              <Button
+                onClick={() => {
+                  window.location = "/";
+                }}
+              >
+                Back to Home Page
+              </Button>
+            }
+            closable={false}
+          >
+            <p>You have logged out successfully!</p>
+          </Modal>
         </Layout.Content>
         <Footer />
       </Layout>

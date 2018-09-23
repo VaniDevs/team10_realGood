@@ -21,10 +21,14 @@ export default class Header extends Component {
   render() {
     return (
       <Layout.Header className="header">
-        <img alt="logo" src="/static/img/logo.jpg" />
-        <span>weekendfuelbag</span>
-        {this.state.auth === "true" && <Avatar />}
-        {this.state.auth === "false" && <Login />}
+        <div>
+          <img alt="logo" src="/static/img/logo.jpg" />
+          <span className="text">weekendfuelbag</span>
+        </div>
+        <div>
+          {this.state.auth === "true" && <Avatar />}
+          {this.state.auth === "false" && <Login />}
+        </div>
       </Layout.Header>
     );
   }
