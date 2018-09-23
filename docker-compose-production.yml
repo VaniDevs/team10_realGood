@@ -1,0 +1,11 @@
+version: "3.4"
+
+services:
+  reactor:
+    build:
+      context: .
+      dockerfile: Dockerfile/DockerfileNodeProduction
+    ports:
+      - "3000:80"
+    container_name: realgood-reactor
+    command: yarn run start
