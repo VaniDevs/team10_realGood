@@ -34,6 +34,9 @@ class CreateResource extends Component {
               <Select.Option value="food">Food</Select.Option>
               <Select.Option value="medical">Medical</Select.Option>
               <Select.Option value="education">Education</Select.Option>
+              <Select.Option value="healthcare">Healthcare</Select.Option>
+              <Select.Option value="clothing">Clothing</Select.Option>
+              <Select.Option value="shelter">Shelter</Select.Option>
             </Select>
           )}
         </Form.Item>
