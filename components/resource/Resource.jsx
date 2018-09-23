@@ -49,6 +49,15 @@ export default class CreateResourceContainer extends Component {
   };
 
   render() {
+    var imgarray = [
+      "https://www.logolynx.com/images/logolynx/6c/6ce8bf3f5c5b7fbbb67b51227fd3cc54.jpeg",
+      "https://www.logolynx.com/images/logolynx/d4/d4e05edd2d225022bfd1f3331b532e53.png",
+      "https://www.logolynx.com/images/logolynx/fa/fa924fb79d10bb32cb5d2c0db50e993c.jpeg",
+      "https://www.ethiopianairlines.com/Cms_Data/Contents/EthiopianAirlines/Media/FlyEthiopian/MedicalImage/Hallelujah-General-Hospital-Logo.png",
+      "https://image.freepik.com/free-vector/hospital-logo-in-green-and-blue_1043-66.jpg",
+      "https://vignette.wikia.nocookie.net/clubpenguinfanon/images/3/34/001_hospital_logo.png/revision/latest?cb=20090908121630"
+    ];
+
     return (
       <List.Item
         actions={[
@@ -87,9 +96,10 @@ export default class CreateResourceContainer extends Component {
         ]}
         extra={
           <img
-            width={272}
+            width={200}
             alt="logo"
-            src="https://gw.alipayobjects.com/zos/rmsportal/mqaQswcyDLcXyDKnZfES.png"
+            // src="https://gw.alipayobjects.com/zos/rmsportal/mqaQswcyDLcXyDKnZfES.png"
+            src={imgarray[Math.floor(Math.random() * imgarray.length)]}
           />
         }
       >
